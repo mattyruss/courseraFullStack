@@ -1,0 +1,80 @@
+/*base styling*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+h1 {
+	text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+h2{
+	border: 2px solid black;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left:52.8%;
+    bottom: 4%;
+    margin: 0px;
+    padding: 0px;
+}
+#chicken {
+	background-color: #7afa9c;
+}
+#beef {
+	background-color: #fa877a;
+}
+#sushi {
+	background-color: #b07afa;
+}
+section {
+	border: 2px solid black;
+	height: 305px;
+	width: 30%;
+	padding:10px;
+	margin: 10px;
+    background-color: #9bbcf2;
+}
+.row{
+	width: 100%;
+}
+
+/*********** Large Devices Only **************/
+@media (min-width: 992px){
+	.col-lg-4 {
+		float: left;
+	}
+	.col-lg-4{
+		width: 30%;
+		margin: 10px;
+	}
+}
+
+/************ Medium Devices Only ***********/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6, .col-md-12 {
+		float: left;
+	}
+	.col-md-6{
+		width: 45%;
+		margin: 10px
+	}
+	.col-md-12 {
+		width: 92.5%;
+		margin: 10px;
+	}
+}
+
+/************ Small Devices Only *************/
+@media (max-width: 767px){
+	.col-sm-12 {
+		float: left;
+		width: 92.5%;
+		margin: 10px;
+	}
+}
